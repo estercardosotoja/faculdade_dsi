@@ -1,4 +1,4 @@
-//Exemplo - Rede Perceptron com apenas 1 neuronio
+package TDE_02_11_03_2022;
 import static java.lang.Math.*;
 import java.util.Scanner;
 
@@ -29,12 +29,13 @@ public class Perceptron {
 
         // Treinamento
         int epocas = 0, i;
+        boolean fim = true;
         double y, erro, erroGeral;
         double eta = 2d;
         // eta e a constante (taxa) de aprendizagem
 
         System.out.println("--- TREINAMENTO");
-        while (true) {
+        while (fim) {
             epocas++;
             erroGeral = 0;
 
@@ -59,6 +60,7 @@ public class Perceptron {
 
             // para quando para todas as entradas o erro for zero
             if (erroGeral == 0)
+                fim = false;
                 break;
         }
 

@@ -1,4 +1,85 @@
-# REDE PERCEPTRON
+# DESENVOLVIMENTO DE SISTEMAS INTELIGENTES 
+
+## Aula 02 - 18/03/2022
+### Etapa 2 (Cliente - Renda - Divida - Classe):
+
+### Diretórios: 
+  - TDE_03_18_03_2022_1
+  - TDE_03_18_03_2022_2
+
+I – Altere o programa de tal forma que a rede consiga determinar se um cliente é um mau ou bom pagador.
+Utilize os dados da tabela para treinar a rede. Execute:
+- Analise quais dados são adequados para servirem de entrada para a rede (seções).
+        
+      Os dados adequados para servirem de entrada para rede neural são: "renda", "divida" e a classe como resultado desejado.
+
+- Normalize as entradas, os valores devem estar entre 0 e 1. Uma forma de normalização para renda, por exemplo, é dividir todas as rendas pela maior renda encontradas na tabela. Verifique e busque uma normalização adequada para o tipo de dados (informe qual foi a escolhida).
+
+      Realizei dois exemplos deste exercicio:
+      I. Encontrado no diretório TDE_03_18_03_2022_1 utilizando a formula: 
+
+     ![calculo1.png](src/TDE_03_18_03_2022_1/1.png)
+
+      II. Encontrado no diretório TDE_03_18_03_2022_2 utilizando a sujestão do exercicio, dividindo todas as rendas pela maior renda encontradas na tabela.
+
+      ![calculo2.png](src/TDE_03_18_03_2022_2/2.png)
+
+- Codifique a classe utilizando valores numéricos. Esses valores devem corresponder aos valores do fundo de ativação, ou seja, aos valores que
+ela é capaz de gerar.
+- Utilize 70% dos dados da tabela para treino e o restante para teste.
+- Contabilize o número de acerto e erros da rede na fase de teste.
+  -  Exemplo I
+     -  Epoca 1
+        - Erros: 7
+        - Acertos:7
+     -  Epoca 2
+        - Erros: 4 
+        - Acertos: 10
+     -  Epoca 3
+        - Erros: 2
+        - Acertos: 12
+     -  Epoca 4
+        -  Erros: 2
+        -  Acertos: 12
+     -  Epoca 5
+        -  Erros: 2 
+        -  Acertos: 12
+     -  Epoca 6
+        -  Erros: 0
+        -  Acertos: 14
+  -  Exemplo II
+     -  Epoca 1
+        - Erros: 7
+        - Acertos:7
+     -  Epoca 2
+        - Erros: 4 
+        - Acertos: 10
+     -  Epoca 3
+        - Erros: 2
+        - Acertos: 12
+     -  Epoca 4
+        -  Erros: 2
+        -  Acertos: 12
+     -  Epoca 5
+        -  Erros: 2 
+        -  Acertos: 12
+     -  Epoca 6
+        -  Erros: 0
+        -  Acertos: 14
+  
+- Envie as alterações efetuadas no exercício em um arquivo editável para o link: Exercício I, disponível no Ambiente Aula.
+
+  - Igualdade nos dois exemplos:
+      
+      - Utilizaram 6 épocas para realizar o treinamento com os dados.
+
+  - Difenciação nos dois exemplos:
+      - Apresentaram resultados diferentes:
+  
+
+## Aula 01 - 11/03/2022
+
+### Diretório: TDE_02_11_03_2022
 
 ### Etapa 1 (Entendendo a programação):
 - Analise o código e entenda como cada uma das etapas de implementação são constituídas, faça um pequeno relato
@@ -53,19 +134,19 @@ Ao executar o programa alterando os parâmetros o tempo de execução:
 * [2]
 
 
- ![img_4.png](img_4.png)
+ ![img_4.png](src/TDE_02_11_03_2022/img_4.png)
 
 
 * [0.5]
 
 
-  ![img_2.png](img_2.png)
+  ![img_2.png](src/TDE_02_11_03_2022/img_2.png)
 
 
 * [0.001]
 
 
-  ![img_1.png](img_1.png)
+  ![img_1.png](src/TDE_02_11_03_2022/img_1.png)
 
 
  * **II** - Altere a implementação para que reconheça a tabela OR e relate se continua funcionando ou não e, o porquê
@@ -74,7 +155,7 @@ Ao executar o programa alterando os parâmetros o tempo de execução:
     - No caso do OR funciona pois as entradas diferentes de [0,0] retornam 1.
     - Assim é possivel separar os resultados por uma reta, conforme na imagem, separando os resultados.   
   
-  ![img_5.png](img_5.png)
+  ![img_5.png](src/TDE_02_11_03_2022/img_5.png)
         
 
  * **III** - Altere a implementação para que reconheça a tabela XOR e relate se continua funcionando ou não e, o porquê
@@ -83,4 +164,4 @@ Ao executar o programa alterando os parâmetros o tempo de execução:
    - No caso do XOR não funciona pois as entradas [0,1] e [1,0] retornam 1.
    - Não é possivel separar os resultados por uma reta.
 
-  ![img.png](img.png)
+  ![img.png](src/TDE_02_11_03_2022/img.png)

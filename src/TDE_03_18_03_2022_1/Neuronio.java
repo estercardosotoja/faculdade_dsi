@@ -1,3 +1,5 @@
+package TDE_03_18_03_2022_1;
+
 public class Neuronio {
     // Neuronio para 2 entradas
 
@@ -29,11 +31,11 @@ public class Neuronio {
         this.w2 = w2;
     }
 
-    public double calculaV(int x1, int x2) {
-        return w0 + w1 * x1 + w2 * x2;
+    public double calculaV(double x1, double x2) {
+        return (w0 + ((w1 * x1) + (w2 * x2)));
     } // calcula o campo local induzido
 
-    public int calculaY(int x1, int x2) { // aplica a funcao
+    public int calculaY(double x1, double x2) { // aplica a funcao
         double v = calculaV(x1, x2);
 
         if (v >= 0)
