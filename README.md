@@ -1,12 +1,27 @@
 # DESENVOLVIMENTO DE SISTEMAS INTELIGENTES 
 
-## Aula 02 - 18/03/2022
+## Aula 02 - 18/03/2022 - Parte 2
+
+### Diretórios:
+- TDE_03_18_03_2022_parte_2
+ 
+### Atividade:
+ I. Descreva como a rede se comportou, ou seja, ela reconheceu os padrões?
+  Envie as alterações efetuadas no exercício em um arquivo editável para o link: Exercício II, disponível no
+  Ambiente Aula.
+
+    Com os dados da primeira tabela não é possivél realizar o treinamento do algotirmo perceptron, dado que os dados não
+    são serados por uma linha linear.
+    
+
+## Aula 02 - 18/03/2022 - Parte 1
 ### Etapa 2 (Cliente - Renda - Divida - Classe):
 
 ### Diretórios: 
   - TDE_03_18_03_2022_1
   - TDE_03_18_03_2022_2
 
+### Atividade:
 I – Altere o programa de tal forma que a rede consiga determinar se um cliente é um mau ou bom pagador.
 Utilize os dados da tabela para treinar a rede. Execute:
 - Analise quais dados são adequados para servirem de entrada para a rede (seções).
